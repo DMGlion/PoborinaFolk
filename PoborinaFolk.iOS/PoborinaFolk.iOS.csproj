@@ -176,5 +176,13 @@
     <BundleResource Include="Resources\CarPins.png" />
     <BundleResource Include="Resources\findme.png" />
     <BundleResource Include="Resources\getthere.png" />
+    <BundleResource Include="Resources\back.png" />
+    <BundleResource Include="Resources\banner.png" />
+    <BundleResource Include="Resources\next.png" />
+    <BundleResource Include="Resources\pause.png" />
+    <BundleResource Include="Resources\play.png" />
+    <BundleResource Include="Resources\playBlack.png" />
+    <BundleResource Include="Resources\previous.png" />
+    <BundleResource Include="Resources\share.png" />
   </ItemGroup>
 </Project>
