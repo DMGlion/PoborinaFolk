@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoborinaFolk.MainPage"
+             NavigationPage.HasNavigationBar="False"
+ >
+    <RelativeLayout BackgroundColor="White">
+
+        <Image Source="pobo.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" > </Image>
+        <FlexLayout Direction="Column" Wrap="Wrap" JustifyContent="End" AlignItems="Center" AlignContent="Center">
+
+
+        <StackLayout Orientation="Horizontal" Margin="0, 50, 0 , 0">
+                <ImageButton Source="concerts.png" Clicked="btnConcerts_Clicked" x:Name="btnConcerts" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+                <ImageButton Source="playlist.png" Clicked="btnPlayList_Clicked" x:Name="btnPlayList" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+            </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0 , 0">
+                <ImageButton Source="mapa.png" Clicked="btnMap_Clicked" x:Name="btnMap" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+                <ImageButton Source="photo.png" Clicked="btnPhoto_Clicked" x:Name="btnPhoto" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+            </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0 , 0">
+                <ImageButton Source="juego.png" Clicked="btnGame_Clicked" x:Name="btnGame" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+                <ImageButton Source="info.png" Clicked="btnInfo_Clicked" x:Name="btnInfo" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+            </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="0, 10, 0 , 60">
+                <ImageButton Source="facebook.png" Clicked="btnFacebook_Clicked" x:Name="btnFacebook" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+                <ImageButton Source="twitter.png" Clicked="btnTwitter_Clicked" x:Name="btnTwitter" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+            <ImageButton Source="Instagram.png" Clicked="btnInstagram_Clicked" x:Name="btnInstagram" 
+                    HorizontalOptions="End"
+                    BackgroundColor="White"
+                    />
+            </StackLayout>
+        
+    </FlexLayout>
+
+  </RelativeLayout>
+
+</ContentPage>

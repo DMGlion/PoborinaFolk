@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PoborinaFolk.InfoPage">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000" BackgroundColor="White">
+            <StackLayout BackgroundColor="White">
+
+                <Frame CornerRadius="10" Padding="0" BackgroundColor="HotPink"
+                       Margin="15,10,15,10" HasShadow="False">
+                    <Label WidthRequest="600" HorizontalOptions="Center" TextColor="White"
+                           HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"
+                           Margin="5" BackgroundColor="HotPink">INFORMACION DE UTILIDAD</Label>
+                </Frame>
+
+                        <Grid Margin="15,10,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33*"/>
+                                <ColumnDefinition Width="33*"/>
+                                <ColumnDefinition Width="33*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="200"/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
+                            <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
+                            <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="LightGoldenrodYellow" />
+
+                            <Image Source="emergency.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                <StackLayout>
+                                    <Label FontAttributes="Bold" HorizontalOptions="Center">Emergencias</Label>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                        <Image Source="phone.png"></Image>
+                                        <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">112</Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+
+                        <ImageButton Source="call.png" Clicked="btnCallEmergency" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
+                        </Grid>
+
+
+                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="33*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"/>
+                                    </Grid.RowDefinitions>
+
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="Lavender" />
+
+                                    <Image Source="ambulance.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                        <StackLayout>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Ambulancia</Label>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                                <Image Source="phone.png"></Image>
+                                                <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">061</Label>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                <ImageButton Source="call.png" Clicked="btnCallAmbulance" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
+                                </Grid>
+
+                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="33*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"/>
+                                    </Grid.RowDefinitions>
+
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="LightGoldenrodYellow" />
+
+                                    <Image Source="police.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                        <StackLayout>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Guardia Civil</Label>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                                <Image Source="phone.png"></Image>
+                                                <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">062</Label>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                <ImageButton Source="call.png" Clicked="btnPolice" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
+                                </Grid>
+
+
+                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="33*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"/>
+                                    </Grid.RowDefinitions>
+
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="Lavender" />
+
+                                    <Image Source="fireman.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                        <StackLayout>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Bomberos</Label>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                                <Image Source="phone.png"></Image>
+                                                <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">080</Label>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                <ImageButton Source="call.png" Clicked="btnFireman" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
+                                </Grid>
+
+
+                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="66*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"/>
+                                    </Grid.RowDefinitions>
+
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
+
+                                    <Image Source="clinic.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                        <StackLayout>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Centro de salud cercano</Label>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Calle Alcalá, Cedrillas</Label>
+                                            
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+
+
+                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="66*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"/>
+                                    </Grid.RowDefinitions>
+
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
+
+                                    <Image Source="pharmacy.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                        <StackLayout>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Farmacia mas cercana</Label>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Calle Mayor, Cedrillas</Label>
+                                            
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+
+
+                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="66*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"/>
+                                    </Grid.RowDefinitions>
+
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
+
+                                    <Image Source="visa.gif" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                        <StackLayout>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Cajero mas cecano</Label>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">6000, Servired y Telebanco</Label>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Calle Mayor, Cedrillas</Label>
+                                            
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+
+
+                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
+                            
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="33*"/>
+                                        <ColumnDefinition Width="66*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"/>
+                                    </Grid.RowDefinitions>
+
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
+                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
+
+                                    <Image Source="informa.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
+                                        <StackLayout>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center">información del Festival</Label>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Caseta del</Label>
+                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Escenario Principal</Label>
+                                            
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
