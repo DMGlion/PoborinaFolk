@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using MediaManager;
 using PoborinaFolk.Constants;
 using UIKit;
 
@@ -25,6 +26,7 @@ namespace PoborinaFolk.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             Xamarin.FormsGoogleMaps.Init(AppConstants.GoogleMapsApiKey);
+            CrossMediaManager.Current.Init();
             LoadApplication(new App());
 
             UIApplication.SharedApplication.StatusBarHidden = true;
