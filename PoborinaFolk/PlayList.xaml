@@ -8,7 +8,7 @@
              x:Class="PoborinaFolk.PlayList">
     
     <ContentPage.BindingContext>
-        <vm:MainViewModel/>
+        <vm:PlayerMainViewModel/>
     </ContentPage.BindingContext>
 
     <pv:PancakeView HasShadow="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundGradientAngle="180">
