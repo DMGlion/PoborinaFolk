@@ -44,7 +44,7 @@ namespace PoborinaFolk
 
         private async void btnInfo_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new InfoPage());
+            await Navigation.PushAsync(new InfoPage1());
         }
 
         // Link Buttons
