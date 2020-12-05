@@ -75,6 +75,22 @@ namespace PoborinaFolk.ViewModels
                     Url = "https://freesound.org/data/previews/9/9351_24818-lq.mp3",
                     CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVKeubeVQI7XuJQg4-JOvy4uXRZpveSIUMQ&usqp=CAU",
                     IsRecent = true},
+                new Music { Title = "Cancion2", Artist = "Nombre Grupo2",
+                    Url = "https://freesound.org/data/previews/9/9351_24818-lq.mp3",
+                    CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVKeubeVQI7XuJQg4-JOvy4uXRZpveSIUMQ&usqp=CAU",
+                    IsRecent = true},
+                new Music { Title = "Cancion2", Artist = "Nombre Grupo2",
+                    Url = "https://freesound.org/data/previews/9/9351_24818-lq.mp3",
+                    CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVKeubeVQI7XuJQg4-JOvy4uXRZpveSIUMQ&usqp=CAU",
+                    IsRecent = true},
+                new Music { Title = "Cancion2", Artist = "Nombre Grupo2",
+                    Url = "https://freesound.org/data/previews/9/9351_24818-lq.mp3",
+                    CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVKeubeVQI7XuJQg4-JOvy4uXRZpveSIUMQ&usqp=CAU",
+                    IsRecent = true},
+                new Music { Title = "Cancion2", Artist = "Nombre Grupo2",
+                    Url = "https://freesound.org/data/previews/9/9351_24818-lq.mp3",
+                    CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVKeubeVQI7XuJQg4-JOvy4uXRZpveSIUMQ&usqp=CAU",
+                    IsRecent = true},
             };
         }
     }
