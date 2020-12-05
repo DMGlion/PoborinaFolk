@@ -87,10 +87,11 @@
                                 <Label Text="{Binding InformationAdd}" TextColor="Black" FontSize="14" Opacity="0.5"/>
                                
                             </StackLayout>
-                             <ImageButton Source="{Binding PhoneImage}" WidthRequest="50" HeightRequest="50" HorizontalOptions="End" VerticalOptions="End" />
-                           
-                                
-                           
+                      
+                            <Button Text="Call" Clicked="Avaliar" CommandParameter="{Binding PhoneNumber}"
+                                     TextColor="Black" WidthRequest="40" HeightRequest="40" BackgroundColor="Beige" CornerRadius="20"
+                                     HorizontalOptions="End" VerticalOptions="Center" IsVisible="{Binding CallPhone}" IsEnabled="{Binding CallPhone}"/>
+
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

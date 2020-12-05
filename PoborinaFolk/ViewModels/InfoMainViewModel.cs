@@ -26,14 +26,14 @@ namespace PoborinaFolk.ViewModels
         {
             return new ObservableCollection<Info>
             {
-                new Info { Image = "emergency.png", Information = "Emergencias", PhoneNumber = "112", PhoneImage="call.png" },
-                new Info { Image = "ambulance.png", Information = "Ambulancia", PhoneNumber = "061", PhoneImage="call.png" },
-                new Info { Image = "police.png", Information = "Guardia Civil", PhoneNumber = "062", PhoneImage="call.png" },
-                new Info { Image = "fireman.png", Information = "Bomberos", PhoneNumber = "080", PhoneImage="call.png" },
-                new Info { Image = "clinic.png", Information = "Centro de salud cercano,", InformationAdd="Calle Alcalá, Cedrillas"},
-                new Info { Image = "pharmacy.png", Information = "Farmacia mas cercana,", InformationAdd="Calle Mayor, Cedrillas"},
-                new Info { Image = "visa.gif", Information = "Cajero mas cecano,", InformationAdd="Calle Mayor, Cedrillas"},
-                new Info { Image = "informa.png", Information = "información del Festival", InformationAdd="Caseta del Escenario Principal"}
+                new Info { Image = "emergency.png", Information = "Emergencias", PhoneNumber = "112", PhoneImage="call.png", CallPhone="True" },
+                new Info { Image = "ambulance.png", Information = "Ambulancia", PhoneNumber = "061", PhoneImage="call.png", CallPhone="True" },
+                new Info { Image = "police.png", Information = "Guardia Civil", PhoneNumber = "062", PhoneImage="call.png", CallPhone="True"},
+                new Info { Image = "fireman.png", Information = "Bomberos", PhoneNumber = "080", PhoneImage="call.png", CallPhone="True" },
+                new Info { Image = "clinic.png", Information = "Centro de salud cercano,", InformationAdd="Calle Alcalá, Cedrillas", CallPhone="False"},
+                new Info { Image = "pharmacy.png", Information = "Farmacia mas cercana,", InformationAdd="Calle Mayor, Cedrillas", CallPhone="False"},
+                new Info { Image = "visa.gif", Information = "Cajero mas cecano,", InformationAdd="Calle Mayor, Cedrillas", CallPhone="False"},
+                new Info { Image = "informa.png", Information = "información del Festival", InformationAdd="Caseta del Escenario Principal", CallPhone="False"}
             };
         }
     }
