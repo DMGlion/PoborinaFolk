@@ -191,5 +191,9 @@
     <BundleResource Include="Resources\imageInfo.png" />
     <BundleResource Include="Resources\ViernesGrupo.png" />
     <BundleResource Include="Resources\right-arrow.png" />
+    <BundleResource Include="Resources\grupo1.png" />
+    <BundleResource Include="Resources\grupo2.png" />
+    <BundleResource Include="Resources\grupo3.png" />
+    <BundleResource Include="Resources\grupo4.png" />
   </ItemGroup>
 </Project>
