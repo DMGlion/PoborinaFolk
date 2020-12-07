@@ -94,75 +94,75 @@ namespace PoborinaFolk.ViewModels
 
         #endregion
 
-        //public ICommand PlayCommand => new Command(Play);
-        //public ICommand ChangeCommand => new Command(ChangeMusic);
+        public ICommand PlayCommand => new Command(Play);
+        public ICommand ChangeCommand => new Command(ChangeMusic);
         public ICommand BackCommand => new Command(() => Application.Current.MainPage.Navigation.PopAsync());
         public ICommand ShareCommand => new Command(() => Share.RequestAsync(selectedMusic.Url, selectedMusic.Title));
 
 
-        //private async void Play()
-        //{
-        //    if (isPlaying)
-        //    {
-        //        await CrossMediaManager.Current.Pause();
-        //        IsPlaying = false; ;
-        //    }
-        //    else
-        //    {
-        //        await CrossMediaManager.Current.Play();
-        //        IsPlaying = true; ;
-        //    }
-        //}
+        private async void Play()
+        {
+            if (isPlaying)
+            {
+                await CrossMediaManager.Current.Pause();
+                IsPlaying = false; ;
+            }
+            else
+            {
+                await CrossMediaManager.Current.Play();
+                IsPlaying = true; ;
+            }
+        }
 
-        //private void ChangeMusic(object obj)
-        //{
-        //    if ((string)obj == "P")
-        //        PreviousMusic();
-        //    else if ((string)obj == "N")
-        //        NextMusic();
-        //}
+        private void ChangeMusic(object obj)
+        {
+            if ((string)obj == "P")
+                PreviousMusic();
+            else if ((string)obj == "N")
+                NextMusic();
+        }
 
-        //private async void PlayMusic(Music music)
-        //{
-        //    var mediaInfo = CrossMediaManager.Current;
-        //    await mediaInfo.Play(music?.Url);
-        //    IsPlaying = true;
+        private async void PlayMusic(Music music)
+        {
+            var mediaInfo = CrossMediaManager.Current;
+            await mediaInfo.Play(music?.Url);
+            IsPlaying = true;
 
-        //    mediaInfo.MediaItemFinished += (sender, args) =>
-        //    {
-        //        IsPlaying = false;
-        //        NextMusic();
-        //    };
+            mediaInfo.MediaItemFinished += (sender, args) =>
+            {
+                IsPlaying = false;
+                NextMusic();
+            };
 
-        //    Device.StartTimer(TimeSpan.FromMilliseconds(500), () =>
-        //    {
-        //        Duration = mediaInfo.Duration;
-        //        Maximum = duration.TotalSeconds;
-        //        Position = mediaInfo.Position;
-        //        return true;
-        //    });
-        //}
+            Device.StartTimer(TimeSpan.FromMilliseconds(500), () =>
+            {
+                Duration = mediaInfo.Duration;
+                Maximum = duration.TotalSeconds;
+                Position = mediaInfo.Position;
+                return true;
+            });
+        }
 
-        //private void NextMusic()
-        //{
-        //    var currentIndex = musicList.IndexOf(selectedMusic);
+        private void NextMusic()
+        {
+            var currentIndex = musicList.IndexOf(selectedMusic);
 
-        //    if (currentIndex < musicList.Count - 1)
-        //    {
-        //        SelectedMusic = musicList[currentIndex + 1];
-        //        PlayMusic(selectedMusic);
-        //    }
-        //}
+            if (currentIndex < musicList.Count - 1)
+            {
+                SelectedMusic = musicList[currentIndex + 1];
+                PlayMusic(selectedMusic);
+            }
+        }
 
-        //private void PreviousMusic()
-        //{
-        //    var currentIndex = musicList.IndexOf(selectedMusic);
+        private void PreviousMusic()
+        {
+            var currentIndex = musicList.IndexOf(selectedMusic);
 
-        //    if (currentIndex > 0)
-        //    {
-        //        SelectedMusic = musicList[currentIndex - 1];
-        //        PlayMusic(selectedMusic);
-        //    }
-        //}
+            if (currentIndex > 0)
+            {
+                SelectedMusic = musicList[currentIndex - 1];
+                PlayMusic(selectedMusic);
+            }
+        }
     }
 }
