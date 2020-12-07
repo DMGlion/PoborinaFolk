@@ -10,11 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace PoborinaFolk
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ConcertEvents1 : TabbedPage
+    public partial class ConcertEventsMain : TabbedPage
     {
-        public ConcertEvents1()
+        public ConcertEventsMain()
         {
-            InitializeComponent();
+            this.Children.Add(new ConcertEventsPage1());
+            this.Children.Add(new ConcertEventsPage2());
+            this.Children.Add(new ConcertEventsPage3());
         }
     }
 }
