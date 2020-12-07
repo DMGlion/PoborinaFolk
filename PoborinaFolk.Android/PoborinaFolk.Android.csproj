@@ -245,7 +245,7 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\right-arrow.png">
+    <AndroidResource Include="Resources\drawable\right_arrow.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

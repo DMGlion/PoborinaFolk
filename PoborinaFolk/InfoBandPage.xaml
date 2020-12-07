@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             ControlTemplate="{StaticResource Cssbackground}"
+             x:Class="PoborinaFolk.InfoBandPage">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+        <ControlTemplate
+            x:Key="Cssbackground">
+            <Grid>
+                <magic:GradientView VerticalOptions="FillAndExpand">
+                <magic:GradientView.GradientSource>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                               linear-gradient(90deg, rgba(243, 243, 243,0.05) 0px, rgba(243, 243, 243,0.05) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(0deg, rgba(243, 243, 243,0.05) 0px, rgba(243, 243, 243,0.05) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(0deg, rgba(243, 243, 243,0.08) 0px, rgba(243, 243, 243,0.08) 1px,transparent 1px, transparent 27px),repeating-linear-gradient(90deg, rgba(243, 243, 243,0.08) 0px, rgba(243, 243, 243,0.08) 1px,transparent 1px, transparent 27px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0))
+                            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView.GradientSource>
+                </magic:GradientView>
+                <ContentPresenter/>
+                </Grid>
+        </ControlTemplate>
+    </ResourceDictionary>
+    </ContentPage.Resources>
+        <StackLayout>
+                <pv:PancakeView CornerRadius="0,0,50,0"  HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Aspect="AspectFill" Grid.RowSpan="2" Source="{Binding SelectedConcert.ImageList}"/>
+                            <Grid Grid.Row="1" HeightRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <BoxView BackgroundColor="Black" Opacity="0.7" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                <StackLayout Margin="40,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding SelectedConcert.NameBand}" TextColor="Coral" FontSize="17"/>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+        </pv:PancakeView>
+                <ScrollView Margin="25,10,25,10">
+                    <Label Text="{Binding SelectedConcert.InfoBand}" TextColor="Beige"/>
+                </ScrollView>
+
+
+        </StackLayout>
+  
+</ContentPage>

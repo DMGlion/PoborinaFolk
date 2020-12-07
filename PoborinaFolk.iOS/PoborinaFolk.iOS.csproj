@@ -190,7 +190,7 @@
     <BundleResource Include="Resources\InfoLogo.png" />
     <BundleResource Include="Resources\imageInfo.png" />
     <BundleResource Include="Resources\ViernesGrupo.png" />
-    <BundleResource Include="Resources\right-arrow.png" />
+    <BundleResource Include="Resources\right_arrow.png" />
     <BundleResource Include="Resources\grupo1.png" />
     <BundleResource Include="Resources\grupo2.png" />
     <BundleResource Include="Resources\grupo3.png" />
