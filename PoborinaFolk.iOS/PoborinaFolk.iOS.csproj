@@ -189,5 +189,6 @@
     <BundleResource Include="Resources\share.png" />
     <BundleResource Include="Resources\InfoLogo.png" />
     <BundleResource Include="Resources\imageInfo.png" />
+    <BundleResource Include="Resources\ViernesGrupo.png" />
   </ItemGroup>
 </Project>

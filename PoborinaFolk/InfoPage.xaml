@@ -34,6 +34,7 @@
         </ControlTemplate>
     </ResourceDictionary>
     </ContentPage.Resources>
+
             <StackLayout>
                 <pv:PancakeView CornerRadius="0,0,50,0"  HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                         <Grid>

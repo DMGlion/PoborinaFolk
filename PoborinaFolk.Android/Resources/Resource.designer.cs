@@ -8661,7 +8661,10 @@ namespace PoborinaFolk.Droid
 			public const int twitter = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int visa = 2131165362;
+			public const int ViernesGrupo = 2131165362;
+			
+			// aapt resource value: 0x7F0700B3
+			public const int visa = 2131165363;
 			
 			static Drawable()
 			{
