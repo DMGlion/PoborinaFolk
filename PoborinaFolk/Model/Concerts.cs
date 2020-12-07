@@ -9,8 +9,5 @@ namespace PoborinaFolk.Model
         public string PlacePlay { get; set; }
         public string InfoImage { get; set; }
         public string InfoBand { get; set; }
-        public bool DayFriday { get; set; }
-        public bool DaySaturday { get; set; }
-        public bool DaySunday { get; set; }
     }
 }
