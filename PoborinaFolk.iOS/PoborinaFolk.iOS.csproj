@@ -195,5 +195,10 @@
     <BundleResource Include="Resources\grupo2.png" />
     <BundleResource Include="Resources\grupo3.png" />
     <BundleResource Include="Resources\grupo4.png" />
+    <BundleResource Include="Resources\sabadogroupo.png" />
+    <BundleResource Include="Resources\sabadogroupo1.png" />
+    <BundleResource Include="Resources\sabadogroupo2.png" />
+    <BundleResource Include="Resources\sabadogroupo3.png" />
+    <BundleResource Include="Resources\sabadogroupo4.png" />
   </ItemGroup>
 </Project>

@@ -8658,28 +8658,43 @@ namespace PoborinaFolk.Droid
 			public const int right_arrow = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int sample = 2131165361;
+			public const int sabadogroupo = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int sample1 = 2131165362;
+			public const int sabadogroupo1 = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int share = 2131165363;
+			public const int sabadogroupo2 = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int tooltip_frame_dark = 2131165364;
+			public const int sabadogroupo3 = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int tooltip_frame_light = 2131165365;
+			public const int sabadogroupo4 = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int twitter = 2131165366;
+			public const int sample = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int ViernesGrupo = 2131165367;
+			public const int sample1 = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int visa = 2131165368;
+			public const int share = 2131165368;
+			
+			// aapt resource value: 0x7F0700B9
+			public const int tooltip_frame_dark = 2131165369;
+			
+			// aapt resource value: 0x7F0700BA
+			public const int tooltip_frame_light = 2131165370;
+			
+			// aapt resource value: 0x7F0700BB
+			public const int twitter = 2131165371;
+			
+			// aapt resource value: 0x7F0700BC
+			public const int ViernesGrupo = 2131165372;
+			
+			// aapt resource value: 0x7F0700BD
+			public const int visa = 2131165373;
 			
 			static Drawable()
 			{

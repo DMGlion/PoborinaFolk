@@ -14,7 +14,7 @@ namespace PoborinaFolk.ViewModels
         {
             this.selectedMusic = selectedMusic;
             this.musicList = musicList;
-            //PlayMusic(selectedMusic);
+            PlayMusic(selectedMusic);
             isPlaying = true;
         }
 
