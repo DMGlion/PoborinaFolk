@@ -61,10 +61,10 @@ namespace PoborinaFolk.ViewModels
             {
                 //Todo replace with a webview
                 new Concerts {ImageList="ViernesGrupo.png", NameBand="first Band Name", TimePlay="00h30", PlacePlay="Escenario Central", InfoBand="" +
-                "Description of band\n " +
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n " +
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, " +
-                "when an unknown printer took a galley of type and scrambled it to make a " +
+                "               Description of band\n\n " +
+                "     Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n\n " +
+                "     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.\n\n " +
+                "     when an unknown printer took a galley of type and scramble.\n\n " +
                 "type specimen book.\n\n  It has survived not only five centuries, but also the " +
                 "leap into electronic typesetting, remaining essentially unchanged. It was popularised " +
                 "in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more&#x0a; " +

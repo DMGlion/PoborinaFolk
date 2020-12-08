@@ -30,7 +30,7 @@ namespace PoborinaFolk.iOS
             LoadApplication(new App());
 
             UIApplication.SharedApplication.StatusBarHidden = true;
-
+          
             return base.FinishedLaunching(app, options);
         }
     }
