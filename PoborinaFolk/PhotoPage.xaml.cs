@@ -1,8 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Plugin.Media;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -47,6 +43,8 @@ namespace PoborinaFolk
                 {
                     Directory = "Sample",
                     Name = "test.jpg",
+                    SaveToAlbum = true,
+                    SaveMetaData = true,
                 });
                 if (mediaFile == null)
                     return;
