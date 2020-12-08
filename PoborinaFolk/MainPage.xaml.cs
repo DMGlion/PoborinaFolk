@@ -19,7 +19,7 @@ namespace PoborinaFolk
         // Navigation Buttons
         private async void btnConcerts_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ConcertEvents());
+            await Navigation.PushAsync(new ConcertEventsMain());
         }
 
         private async void btnPlayList_Clicked(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace PoborinaFolk
 
         private async void btnInfo_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new InfoPage1());
+            await Navigation.PushAsync(new InfoPage());
         }
 
         // Link Buttons

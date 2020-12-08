@@ -42,11 +42,6 @@
     </ContentPage>
 
 
-
-
-
-
-
 <ContentPage Title="Saturday" Icon="calendar_22.png" BackgroundColor="White">
         <ContentPage.Content>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">

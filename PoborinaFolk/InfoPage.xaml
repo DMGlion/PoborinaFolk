@@ -1,251 +1,111 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+             xmlns:vm="clr-namespace:PoborinaFolk.ViewModels"
+             ControlTemplate="{StaticResource Cssbackground}"
+             mc:Ignorable="d"
              x:Class="PoborinaFolk.InfoPage">
 
-    <ContentPage.Content>
-        <ScrollView HeightRequest="3000" BackgroundColor="White">
-            <StackLayout BackgroundColor="White">
+        <ContentPage.BindingContext>
+        <vm:InfoMainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+        <ControlTemplate
+            x:Key="Cssbackground">
+            <Grid>
+                <magic:GradientView VerticalOptions="FillAndExpand">
+                <magic:GradientView.GradientSource>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                                linear-gradient(242deg, rgba(195, 195, 195, 0.02) 0%, rgba(195, 195, 195, 0.02) 16.667%,rgba(91, 91, 91, 0.02) 16.667%, rgba(91, 91, 91, 0.02) 33.334%,rgba(230, 230, 230, 0.02) 33.334%, rgba(230, 230, 230, 0.02) 50.001%,rgba(18, 18, 18, 0.02) 50.001%, rgba(18, 18, 18, 0.02) 66.668%,rgba(163, 163, 163, 0.02) 66.668%, rgba(163, 163, 163, 0.02) 83.335%,rgba(140, 140, 140, 0.02) 83.335%, rgba(140, 140, 140, 0.02) 100.002%),linear-gradient(152deg, rgba(151, 151, 151, 0.02) 0%, rgba(151, 151, 151, 0.02) 16.667%,rgba(11, 11, 11, 0.02) 16.667%, rgba(11, 11, 11, 0.02) 33.334%,rgba(162, 162, 162, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 50.001%,rgba(171, 171, 171, 0.02) 50.001%, rgba(171, 171, 171, 0.02) 66.668%,rgba(119, 119, 119, 0.02) 66.668%, rgba(119, 119, 119, 0.02) 83.335%,rgba(106, 106, 106, 0.02) 83.335%, rgba(106, 106, 106, 0.02) 100.002%),linear-gradient(11deg, rgba(245, 245, 245, 0.01) 0%, rgba(245, 245, 245, 0.01) 16.667%,rgba(23, 23, 23, 0.01) 16.667%, rgba(23, 23, 23, 0.01) 33.334%,rgba(96, 96, 96, 0.01) 33.334%, rgba(96, 96, 96, 0.01) 50.001%,rgba(140, 140, 140, 0.01) 50.001%, rgba(140, 140, 140, 0.01) 66.668%,rgba(120, 120, 120, 0.01) 66.668%, rgba(120, 120, 120, 0.01) 83.335%,rgba(48, 48, 48, 0.01) 83.335%, rgba(48, 48, 48, 0.01) 100.002%),linear-gradient(27deg, rgba(106, 106, 106, 0.03) 0%, rgba(106, 106, 106, 0.03) 14.286%,rgba(203, 203, 203, 0.03) 14.286%, rgba(203, 203, 203, 0.03) 28.572%,rgba(54, 54, 54, 0.03) 28.572%, rgba(54, 54, 54, 0.03) 42.858%,rgba(75, 75, 75, 0.03) 42.858%, rgba(75, 75, 75, 0.03) 57.144%,rgba(216, 216, 216, 0.03) 57.144%, rgba(216, 216, 216, 0.03) 71.43%,rgba(39, 39, 39, 0.03) 71.43%, rgba(39, 39, 39, 0.03) 85.716%,rgba(246, 246, 246, 0.03) 85.716%, rgba(246, 246, 246, 0.03) 100.002%),linear-gradient(317deg, rgba(215, 215, 215, 0.01) 0%, rgba(215, 215, 215, 0.01) 16.667%,rgba(72, 72, 72, 0.01) 16.667%, rgba(72, 72, 72, 0.01) 33.334%,rgba(253, 253, 253, 0.01) 33.334%, rgba(253, 253, 253, 0.01) 50.001%,rgba(4, 4, 4, 0.01) 50.001%, rgba(4, 4, 4, 0.01) 66.668%,rgba(183, 183, 183, 0.01) 66.668%, rgba(183, 183, 183, 0.01) 83.335%,rgba(17, 17, 17, 0.01) 83.335%, rgba(17, 17, 17, 0.01) 100.002%),linear-gradient(128deg, rgba(119, 119, 119, 0.03) 0%, rgba(119, 119, 119, 0.03) 12.5%,rgba(91, 91, 91, 0.03) 12.5%, rgba(91, 91, 91, 0.03) 25%,rgba(45, 45, 45, 0.03) 25%, rgba(45, 45, 45, 0.03) 37.5%,rgba(182, 182, 182, 0.03) 37.5%, rgba(182, 182, 182, 0.03) 50%,rgba(243, 243, 243, 0.03) 50%, rgba(243, 243, 243, 0.03) 62.5%,rgba(162, 162, 162, 0.03) 62.5%, rgba(162, 162, 162, 0.03) 75%,rgba(190, 190, 190, 0.03) 75%, rgba(190, 190, 190, 0.03) 87.5%,rgba(148, 148, 148, 0.03) 87.5%, rgba(148, 148, 148, 0.03) 100%),linear-gradient(90deg, rgb(185, 139, 80),rgb(176, 26, 6))
+                            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView.GradientSource>
+                </magic:GradientView>
+                <ContentPresenter/>
+                </Grid>
+        </ControlTemplate>
+    </ResourceDictionary>
+    </ContentPage.Resources>
 
-                <Frame CornerRadius="10" Padding="0" BackgroundColor="HotPink"
-                       Margin="15,10,15,10" HasShadow="False">
-                    <Label WidthRequest="600" HorizontalOptions="Center" TextColor="White"
-                           HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"
-                           Margin="5" BackgroundColor="HotPink">INFORMACION DE UTILIDAD</Label>
-                </Frame>
+            <StackLayout>
+                <pv:PancakeView CornerRadius="0,0,50,0"  HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Aspect="AspectFill" Grid.RowSpan="2" Source="imageInfo.png"/>
+                            <Grid Grid.Row="1" HeightRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <BoxView BackgroundColor="Black" Opacity="0.7" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                <StackLayout Margin="40,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                    <Label Text="INFORMACION DE UTILIDAD" TextColor="White" FontSize="17"/>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </pv:PancakeView>
 
-                        <Grid Margin="15,10,15,10" WidthRequest="600" HeightRequest="150" >
-                            
+
+        <pv:PancakeView HasShadow="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundGradientAngle="180">
+      
+        <Grid RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+          
+            
+            <CollectionView Grid.Row="0" Margin="20,0" ItemsSource="{Binding InfoList}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+              
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="#a88c47" Opacity="0.7" Padding="15,10" HorizontalOptions="FillAndExpand">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="33*"/>
-                                <ColumnDefinition Width="33*"/>
-                                <ColumnDefinition Width="33*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="200"/>
-                            </Grid.RowDefinitions>
+                            <pv:PancakeView HasShadow="True" HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Center" 
+                                            BackgroundGradientAngle="180">
+                                <pv:PancakeView.BackgroundGradientStops>
+                                    <pv:GradientStopCollection>
+                                        <pv:GradientStop Color="#E3E7EE" Offset="0" />
+                                        <pv:GradientStop Color="#FBFBFB" Offset="1" />
+                                    </pv:GradientStopCollection>
+                                </pv:PancakeView.BackgroundGradientStops>
+                                <Image Source="{Binding Image}" WidthRequest="30" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </pv:PancakeView>
 
-                            <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
-                            <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
-                            <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="LightGoldenrodYellow" />
-
-                            <Image Source="emergency.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                <StackLayout>
-                                    <Label FontAttributes="Bold" HorizontalOptions="Center">Emergencias</Label>
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                        <Image Source="phone.png"></Image>
-                                        <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">112</Label>
-                                    </StackLayout>
-                                </StackLayout>
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Start" Margin="55,0,0,0">
+                                <Label Text="{Binding Information}" TextColor="Black" FontSize="17"/>
+                                <Label Text="{Binding PhoneNumber}" TextColor="Black" FontSize="14" Opacity="0.5"/>
+                                <Label Text="{Binding InformationAdd}" TextColor="Black" FontSize="14" Opacity="0.5"/>
+                               
                             </StackLayout>
+                      
+                            <Button Text="Call" Clicked="Avaliar" CommandParameter="{Binding PhoneNumber}"
+                                     TextColor="Black" WidthRequest="40" HeightRequest="40" BackgroundColor="Beige" CornerRadius="20"
+                                     HorizontalOptions="End" VerticalOptions="Center" IsVisible="{Binding CallPhone}" IsEnabled="{Binding CallPhone}"/>
 
-                        <ImageButton Source="call.png" Clicked="btnCallEmergency" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
                         </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </pv:PancakeView>
+                </StackLayout>
 
 
-                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
-                            
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="33*"/>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="200"/>
-                                    </Grid.RowDefinitions>
-
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="Lavender" />
-
-                                    <Image Source="ambulance.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                        <StackLayout>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Ambulancia</Label>
-                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                                <Image Source="phone.png"></Image>
-                                                <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">061</Label>
-                                            </StackLayout>
-                                        </StackLayout>
-                                    </StackLayout>
-
-                                <ImageButton Source="call.png" Clicked="btnCallAmbulance" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
-                                </Grid>
-
-                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
-                            
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="33*"/>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="200"/>
-                                    </Grid.RowDefinitions>
-
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="LightGoldenrodYellow" />
-
-                                    <Image Source="police.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                        <StackLayout>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Guardia Civil</Label>
-                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                                <Image Source="phone.png"></Image>
-                                                <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">062</Label>
-                                            </StackLayout>
-                                        </StackLayout>
-                                    </StackLayout>
-
-                                <ImageButton Source="call.png" Clicked="btnPolice" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
-                                </Grid>
 
 
-                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
-                            
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="33*"/>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="200"/>
-                                    </Grid.RowDefinitions>
-
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="2" BackgroundColor="Lavender" />
-
-                                    <Image Source="fireman.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                        <StackLayout>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Bomberos</Label>
-                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                                <Image Source="phone.png"></Image>
-                                                <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">080</Label>
-                                            </StackLayout>
-                                        </StackLayout>
-                                    </StackLayout>
-
-                                <ImageButton Source="call.png" Clicked="btnFireman" Grid.Row="0" Grid.Column="2" Margin="15,15,15,15"></ImageButton>
-                                </Grid>
 
 
-                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
-                            
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="66*"/>
-                                    </Grid.ColumnDefinitions>
 
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="200"/>
-                                    </Grid.RowDefinitions>
-
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
-
-                                    <Image Source="clinic.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                        <StackLayout>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Centro de salud cercano</Label>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Calle Alcalá, Cedrillas</Label>
-                                            
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Grid>
-
-
-                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
-                            
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="66*"/>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="200"/>
-                                    </Grid.RowDefinitions>
-
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
-
-                                    <Image Source="pharmacy.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                        <StackLayout>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Farmacia mas cercana</Label>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Calle Mayor, Cedrillas</Label>
-                                            
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Grid>
-
-
-                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
-                            
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="66*"/>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="200"/>
-                                    </Grid.RowDefinitions>
-
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" />
-
-                                    <Image Source="visa.gif" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                        <StackLayout>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">Cajero mas cecano</Label>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">6000, Servired y Telebanco</Label>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Calle Mayor, Cedrillas</Label>
-                                            
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Grid>
-
-
-                        <Grid Margin="15,40,15,10" WidthRequest="600" HeightRequest="150" >
-                            
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="33*"/>
-                                        <ColumnDefinition Width="66*"/>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="200"/>
-                                    </Grid.RowDefinitions>
-
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="0" BackgroundColor="Lavender" />
-                                    <BoxView CornerRadius="10" Grid.Row="0" Grid.Column="1" BackgroundColor="Lavender" />
-
-                                    <Image Source="informa.png" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"></Image>
-
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="Center">
-                                        <StackLayout>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center">información del Festival</Label>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Caseta del</Label>
-                                            <Label FontAttributes="Bold" HorizontalOptions="Center" TextColor="HotPink">Escenario Principal</Label>
-                                            
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Grid>
-            </StackLayout>
-        </ScrollView>
-    </ContentPage.Content>
 </ContentPage>
+

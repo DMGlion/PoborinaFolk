@@ -189,5 +189,21 @@
     <BundleResource Include="Resources\share.png" />
     <BundleResource Include="Resources\InfoLogo.png" />
     <BundleResource Include="Resources\imageInfo.png" />
+    <BundleResource Include="Resources\ViernesGrupo.png" />
+    <BundleResource Include="Resources\right_arrow.png" />
+    <BundleResource Include="Resources\grupo1.png" />
+    <BundleResource Include="Resources\grupo2.png" />
+    <BundleResource Include="Resources\grupo3.png" />
+    <BundleResource Include="Resources\grupo4.png" />
+    <BundleResource Include="Resources\sabadogroupo.png" />
+    <BundleResource Include="Resources\sabadogroupo1.png" />
+    <BundleResource Include="Resources\sabadogroupo2.png" />
+    <BundleResource Include="Resources\sabadogroupo3.png" />
+    <BundleResource Include="Resources\sabadogroupo4.png" />
+    <BundleResource Include="Resources\domingogroupo.png" />
+    <BundleResource Include="Resources\domingogroupo1.png" />
+    <BundleResource Include="Resources\domingogroupo2.png" />
+    <BundleResource Include="Resources\domingogroupo3.png" />
+    <BundleResource Include="Resources\domingogroupo4.png" />
   </ItemGroup>
 </Project>
